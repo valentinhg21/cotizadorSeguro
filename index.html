@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Insurance quote</title>
+</head>
+<body>
+    <section class="container">
+        <div class="card">
+            <div class="container__form">
+                    <div class="container__form-title">
+                        <span class="form__title">Quote Form</span>
+                    </div>
+                    <form id="insurance-quote">
+                        <div class="brand__title">
+                            <span>Choose your car brand</span>
+                        </div>
+                        <div class="form__brands" id="brand">
+                            <div class="border__brands">
+                                <label class="brands" for="american">American</label>
+                                <input type="radio" name="brand" value="1"  class="input-radio" id="american" checked>
+                            </div>
+                            <div class="border__brands">
+                                <label class="brands" for="european">European</label>
+                                <input type="radio" name="brand" value="2"  class="input-radio" id="european">
+                            </div>
+                            <div class="border__brands">
+                                <label class="brands" for="italy">Asian</label>
+                                <input type="radio" name="brand" value="3"  class="input-radio" id="italy">
+
+                            </div>
+                        </div>
+                        <div class="title__insurance">
+                            <span>Type of insurance</span>
+                        </div>
+                        <div class="form__category">
+                            <div class="category">
+                                <input type="radio" name="category" value="Fully" checked id="fully">
+                                <label for="fully">Fully</label>
+                            </div>
+                            <div class="category">
+                                <input type="radio" name="category" value="Basic" id="basic">
+                                <label for="basic">Basic</label>
+                            </div>
+                        </div>
+                        <div class="form__description">
+                            <div>
+                                <label for="owner">Car Owner</label>
+                                <input type="text" id="owner">
+                            </div>
+                            <div>
+                                <div>
+                                    <label for="model">Model Car</label>
+                                    <input type="text" id="model">
+                                </div>
+                                <div>
+                                    <label for="year">Year</label>
+                                    <select name="year" id="year"></select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <button type="submit" id="submit" class="btn">Quote now</button>
+                        </div>
+                    </form>
+            </div>
+            <div class="container__results" id="containerResults">
+
+            </div>
+        </div>
+
+    </section>
+    <script src="js/main.js"></script>
+</body>
+</html>
